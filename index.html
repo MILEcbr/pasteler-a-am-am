@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Ñam Ñam</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+</head>
+<body>
+    <!--menu-->
+    <nav>
+        <div class="logo" href="#inicio">Pastelería Ñam Ñam</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#dulces">Dulces</a></li>
+            <li><a href="#tortas">Tortas</a></li>
+            <li><a href="#candy-bar">Candy Bar</a></li>
+            <li><a href="#salados">Salados</a></li>
+            <li><a href="#especiales">Especiales</a></li>
+        </ul>
+        <div class="cart">
+            <a href="#cart" class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <section id="inicio" class="section-inicio">
+        <h1>!Bienvenido!</h1>
+        <p>¡Delicias horneadas con amor cada día!</p>
+        
+    </section>
+         <!-- Modal del Carrito -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="cart-items-modal">
+                <!-- Los productos se mostrarán aquí -->
+            </div>
+            <div id="cart-total-modal">
+                <p>Total: $0</p>
+            </div>
+            <button id="confirm-purchase">Confirmar Compra</button>
+        </div>
+    </div>
+    <section id="dulces" class="section">
+        <h2>Dulces</h2>
+        <div class="item-container">
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/tartafrutilla (2).jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/tartamanzana.jpg" alt="Tarta de manzana" class="gallery-img">
+                    <img src="styles/img/tartafrutilla.jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="styles/img/tartadurazno.jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Tartas</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/alfajor1.jpg" alt="Alfajor de Maicena" class="gallery-img active">
+                    <img src="styles/img/alfajor2.jpg" alt="Alfajor" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="Alfajor" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Alfajores</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/factura1.jpg" alt="Factura" class="gallery-img active">
+                    <img src="styles/img/factura2.jpg" alt="Factura" class="gallery-img">
+                    <img src="styles/img/factura3.jpg" alt="Factura" class="gallery-img">
+                    <img src="styles/img/factura4.jpg" alt="Factura" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Facturas</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/budin1.jpg" alt="budin" class="gallery-img active">
+                    <img src="styles/img/budin2.jpg" alt="budin" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Budines</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/brownie.jpg" alt="brownie" class="gallery-img active">
+                    <img src="styles/img/brownie (2).jpg" alt="brownie" class="gallery-img">
+                    <img src="styles/img/brownie (3).jpg" alt="brownie" class="gallery-img">
+                    <img src="styles/img/brownie (5).jpg" alt="brownie" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Brownie</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="tortas" class="section">
+        <h2>Tortas</h2>
+        <div class="item-container">
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/turron salteño.jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/turronsalteño.jpg" alt="Tarta de durazno" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Alfajor Salteño</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/tortacrema.jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/tortacrema1.jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="styles/img/tortacrema2.jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="styles/img/tortacrema3.jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Crema</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/torta (16).jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/torta (4).jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="styles/img/torta (16).jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="styles/img/torta (16).jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Golosinas</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="candy-bar" class="section">
+        <h2>Candy Bar</h2>
+        <div class="item-container">
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/cupcake (2).jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/cupcake (3).jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="styles/img/cupcake (4).jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="styles/img/cupcake.jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Cupcakes</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/cakepop (2).jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/cakepop.jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="styles/img/cakepop (2).jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="styles/img/cakepop (2).jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>CakePops</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="img/pastel1.jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="img/pastel2.jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Macarons</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="salados" class="section">
+        <h2>Salados</h2>
+        <div class="item-container">
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/empanada.jpg" alt="empanada" class="gallery-img active">
+                    <img src="styles/img/empanada.jpg" alt="empanada" class="gallery-img">
+                    <img src="styles/img/empanada.jpg" alt="empanada" class="gallery-img">
+                    <img src="styles/img/empanada.jpg" alt="empanada" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Empanadas</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/pizza1.jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/pizza1.jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="styles/img/pizza1.jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="styles/img/pizza1.jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Pizzas</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="img/pastel1.jpg" alt="Tarta" class="gallery-img active">
+                    <img src="img/pastel2.jpg" alt="Tarta" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="Tarta" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="Tarta" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Tartas Saladas</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/pernil.jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/pernil (2).jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="styles/img/pernil (3).jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="styles/img/pernil (4).jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Pernil</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="especiales" class="section">
+        <h2>Especiales</h2>
+        <div class="item-container">
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/dia del padre.jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/diadelpadre.jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="styles/img/dia del padre.jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="styles/img/dia del padre.jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Día del Padre</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="styles/img/navidad (4).jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="styles/img/navidad (5).jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="styles/img/navidad (6).jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="styles/img/navidad (7).jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>Navidad</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <div class="gallery">
+                    <img src="img/pastel1.jpg" alt="Tarta de frutillas" class="gallery-img active">
+                    <img src="img/pastel2.jpg" alt="Tarta de durazno" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="Tarta TOFI" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="Tarta Havvanet" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button class="prev">Anterior</button>
+                    <button class="next">Siguiente</button>
+                </div>
+                <p>San Valentín</p>
+                <p>$100</p>
+                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+    <!-- Modal del Carrito -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="cart-items-modal">
+                <!-- Los productos se mostrarán aquí -->
+            </div>
+            <div id="cart-total-modal">
+                <p>Total: $0</p>
+            </div>
+            <button id="confirm-purchase">Confirmar Compra</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li>Sucursal Tartagal, Salta: Av. Mosconi 101 Dptos (+54 9 3873 417977)</li>
+                    <li>Sucursal San Luis: Avenida Siempreviva 742 (+54 9 3873 231516)</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com/profile.php?id=100065204413078" target="_blank" class="social-icon">
+                    <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/pasteleria_niam.niam?igsh=ZjVtMjk5ZTA3Z3dh" target="_blank" class="social-icon">
+                    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Panadería Ñam Ñam</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
