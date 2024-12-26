@@ -25,6 +25,7 @@
             </a>
         </div>
     </nav>
+    
     <div class="nav-responsive" onclick="mostrarOcultarMenu()">
         <i class="fa-solid fa-bars"></i>
     </div>
@@ -33,20 +34,8 @@
         <p>¡Delicias horneadas con amor cada día!</p>
         
     </section>
-         <!-- Modal del Carrito -->
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Tu Carrito</h2>
-            <div id="cart-items-modal">
-                <!-- Los productos se mostrarán aquí -->
-            </div>
-            <div id="cart-total-modal">
-                <p>Total: $0</p>
-            </div>
-            <button id="confirm-purchase">Confirmar Compra</button>
-        </div>
-    </div>
+      
+    
     <section id="dulces" class="section">
         <h2>Dulces</h2>
         <div class="item-container">
@@ -63,7 +52,7 @@
                 </div>
                 <p>Tartas</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Tarta" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -78,7 +67,7 @@
                 </div>
                 <p>Alfajores</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Alfajor" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -93,7 +82,7 @@
                 </div>
                 <p>Facturas</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Facturas" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -106,7 +95,7 @@
                 </div>
                 <p>Budines</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Budines" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -121,7 +110,7 @@
                 </div>
                 <p>Brownie</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Brownie" data-price="100">Agregar al carrito</button>
             </div>
         </div>
     </section>
@@ -140,7 +129,7 @@
                 </div>
                 <p>Alfajor Salteño</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Alfajor Salteño" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -155,7 +144,7 @@
                 </div>
                 <p>Crema</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Torta Crema" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -170,7 +159,7 @@
                 </div>
                 <p>Golosinas</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Torta de Golosinas" data-price="100">Agregar al carrito</button>
             </div>
         </div>
     </section>
@@ -191,7 +180,7 @@
                 </div>
                 <p>Cupcakes</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Cupcakes" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -206,7 +195,7 @@
                 </div>
                 <p>CakePops</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="CakePops" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -221,7 +210,7 @@
                 </div>
                 <p>Macarons</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Macarons" data-price="100">Agregar al carrito</button>
             </div>
         </div>
     </section>
@@ -242,7 +231,7 @@
                 </div>
                 <p>Empanadas</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Empanadas" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -257,7 +246,7 @@
                 </div>
                 <p>Pizzas</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Pizza" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -272,7 +261,7 @@
                 </div>
                 <p>Tartas Saladas</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Tarta Salada" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -287,7 +276,7 @@
                 </div>
                 <p>Pernil</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Pernil" data-price="100">Agregar al carrito</button>
             </div>
         </div>
     </section>
@@ -297,10 +286,10 @@
         <div class="item-container">
             <div class="item">
                 <div class="gallery">
-                    <img src="styles/img/dia del padre.jpg" alt="Tarta de frutillas" class="gallery-img active">
-                    <img src="styles/img/diadelpadre.jpg" alt="Tarta de durazno" class="gallery-img">
-                    <img src="styles/img/dia del padre.jpg" alt="Tarta TOFI" class="gallery-img">
-                    <img src="styles/img/dia del padre.jpg" alt="Tarta Havvanet" class="gallery-img">
+                    <img src="styles/img/dia del padre.jpg" alt="" class="gallery-img active">
+                    <img src="styles/img/diadelpadre.jpg" alt="" class="gallery-img">
+                    <img src="styles/img/dia del padre.jpg" alt="" class="gallery-img">
+                    <img src="styles/img/dia del padre.jpg" alt="" class="gallery-img">
                 </div>
                 <div class="gallery-controls">
                     <button class="prev">Anterior</button>
@@ -308,7 +297,7 @@
                 </div>
                 <p>Día del Padre</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Día del Padre" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
@@ -323,14 +312,14 @@
                 </div>
                 <p>Navidad</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="Navidad" data-price="100">Agregar al carrito</button>
             </div>
             <div class="item">
                 <div class="gallery">
-                    <img src="img/pastel1.jpg" alt="Tarta de frutillas" class="gallery-img active">
-                    <img src="img/pastel2.jpg" alt="Tarta de durazno" class="gallery-img">
-                    <img src="img/pastel3.jpg" alt="Tarta TOFI" class="gallery-img">
-                    <img src="img/pastel3.jpg" alt="Tarta Havvanet" class="gallery-img">
+                    <img src="img/pastel1.jpg" alt="" class="gallery-img active">
+                    <img src="img/pastel2.jpg" alt="" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="" class="gallery-img">
+                    <img src="img/pastel3.jpg" alt="" class="gallery-img">
                 </div>
                 <div class="gallery-controls">
                     <button class="prev">Anterior</button>
@@ -338,24 +327,23 @@
                 </div>
                 <p>San Valentín</p>
                 <p>$100</p>
-                <button class="add-to-cart" data-product="Pastel de Fresa" data-price="100">Agregar al carrito</button>
+                <button class="add-to-cart" data-product="San Valentin" data-price="100">Agregar al carrito</button>
             </div>
         </div>
     </section>
-    <!-- Modal del Carrito -->
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Tu Carrito</h2>
-            <div id="cart-items-modal">
-                <!-- Los productos se mostrarán aquí -->
-            </div>
-            <div id="cart-total-modal">
-                <p>Total: $0</p>
-            </div>
-            <button id="confirm-purchase">Confirmar Compra</button>
+
+    <!--carrito-->
+    <section id="cart" class="cart-section">
+        <h2>Carrito de Compras</h2>
+        <div id="cart-items"></div>
+        <div class="cart-summary">
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button id="checkout">Finalizar Compra</button>
         </div>
-    </div>
+
+    </section>
+    
+    
 
     <!-- Footer -->
     <footer>
@@ -378,10 +366,19 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Panadería Ñam Ñam</p>
+            <p>&copy; 2024 Pastelería Ñam Ñam</p>
         </div>
     </footer>
+    
+    <script>
+        function mostrarOcultarMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+    
 
     <script src="script.js"></script>
 </body>
 </html>
+
